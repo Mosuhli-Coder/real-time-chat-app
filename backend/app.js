@@ -17,9 +17,9 @@ const __dirname = path.resolve();
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body)
 app.use(cookieParser());
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello World!");
+// });
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
